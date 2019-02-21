@@ -22,7 +22,9 @@ sudo add-apt-repository \
    stable"
 
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
-sudo cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+sudo rm /etc/apt/sources.list.d/kubernetes.list
+sudo touch /etc/apt/sources.list.d/kubernetes.list
+sudo tee -a /etc/apt/sources.list.d/kubernetes.list >/dev/null <<'EOF'
 deb http://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 
