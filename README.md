@@ -1,1 +1,4 @@
-# My set of scripts for installing Apache Kafka and OpenFaaS on Kubernetes
+# My set of scripts for installing:
+- Kubernetes on rock64
+- Apache Kafka on Kubernetes
+- OpenFaaS on Kubernetes
