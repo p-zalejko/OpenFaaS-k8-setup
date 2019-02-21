@@ -1,0 +1,14 @@
+# Default values for rock64-setup-platform.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+traefik:
+  domain: traefik.internal.dom.com
+  loadBalancerIP: 192.168.12.20
+
+metallbIpRange: 192.168.2.16/28
+
+nfs-provider:
+  storage-class-name: nfs-ssd-node1
+  nfs-server-ip: 192.168.2.213
+  nfs-path: /home/rock64/kube-local-storage

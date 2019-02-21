@@ -7,17 +7,6 @@
 # faas CLI
 curl -sL cli.openfaas.com | sudo sh
 
-# helm
-curl https://raw.githubusercontent.com/helm/helm/master/scripts/get | bash
-
-# minikube --memory 8192 --cpus 4 start
-
-# Create a service account for Helm’s server component (tiller)
-kubectl -n kube-system create sa tiller && kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
-
-# Install tiller which is Helm’s server-side component
-helm init --skip-refresh --upgrade --service-account tiller
-
 kubectl apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/namespaces.yml
 helm repo add openfaas https://openfaas.github.io/faas-netes/
 helm repo update
