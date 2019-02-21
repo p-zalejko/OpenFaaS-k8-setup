@@ -22,9 +22,9 @@ add-apt-repository \
    stable"
 
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
-cat <<EOT >> /etc/apt/sources.list.d/kubernetes.list
+cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
 deb http://apt.kubernetes.io/ kubernetes-xenial main
-EOT
+EOF
 
 apt-get update -y
 
@@ -34,3 +34,4 @@ apt-get update -y
 apt-get install docker-ce=18.06.1~ce~3-0~debian
 apt-get install docker-compose 
 usermod -aG docker $USER
+
