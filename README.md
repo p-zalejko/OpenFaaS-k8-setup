@@ -1,1 +1,1 @@
-# faas-k8-setup
+# My set of scripts for installing Apache Kafka and OpenFaaS on Kubernetes
