@@ -33,4 +33,4 @@ sudo apt-get update -y
 # apt-cache madison docker-ce
 sudo apt-get install docker-ce=18.06.1~ce~3-0~debian
 sudo apt-get install docker-compose 
-usermod -aG docker $USER
+sudo usermod -aG docker $USER
