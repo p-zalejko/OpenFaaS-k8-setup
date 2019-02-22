@@ -13,6 +13,6 @@ edit /etc/hosts
 ```
 
 Then open:
-````
+```
 http://dashboard.internal.dom.com
 ```
