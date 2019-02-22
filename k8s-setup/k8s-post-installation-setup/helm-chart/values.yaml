@@ -14,4 +14,4 @@ nfs_provider:
   nfs_path: /home/rock64/kube-local-storage
 
 k8s_dashboard:
-  domain: dashboard.cloud.dom.com
+  domain: dashboard.internal.dom.com
