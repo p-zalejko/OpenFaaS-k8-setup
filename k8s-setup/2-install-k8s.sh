@@ -1,6 +1,6 @@
 #home dir
 USER_HOME=/home/rock64
-USER_NAME=$(whoami)
+USER_NAME=rock64
 
 # Install kubernetes
 KUBERNETES_VERSION="1.13.3"
