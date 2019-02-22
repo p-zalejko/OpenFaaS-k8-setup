@@ -22,9 +22,9 @@ spec:
             - name: PROVISIONER_NAME
               value: fuseim.pri/ssd1
             - name: NFS_SERVER
-              value: {{ .Values.nfs-provider.nfs-server-ip }}
+              value: {{ .Values.nfs_provider.nfs_server_ip }}
             - name: NFS_PATH
-              value: {{ .Values.nfs-provider.nfs-path }}
+              value: {{ .Values.nfs_provider.nfs_path }}
       affinity:
         podAntiAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
@@ -40,5 +40,5 @@ spec:
       volumes:
         - name: nfs-client-root
           nfs:
-            server: {{ .Values.nfs-provider.nfs-server-ip }}
-            path: {{ .Values.nfs-provider.nfs-path }}
+            server: {{ .Values.nfs_provider.nfs_server_ip }}
+            path: {{ .Values.nfs_provider.nfs_path }}
