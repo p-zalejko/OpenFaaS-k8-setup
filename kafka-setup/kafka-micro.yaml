@@ -93,6 +93,7 @@ spec:
       name: datadir
     spec:
       accessModes: [ "ReadWriteOnce" ]
+      storageClassName: "nfs-ssd-node1"
       resources:
         requests:
           storage: 1Gi
