@@ -16,3 +16,16 @@ Then open:
 ```
 http://dashboard.internal.dom.com
 ```
+
+## OpenFaaS Gateway
+
+edit /etc/hosts
+
+```
+192.168.2.20 openfaas-gateway.internal.dom.com
+```
+
+Then open:
+```
+http://openfaas-gateway.internal.dom.com
+```
